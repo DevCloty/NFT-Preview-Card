@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MOBILE-FIRST */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: hsl(215, 51%, 70%);
+    background-color: hsl(217, 54%, 11%);
+}
+
+/** CARD **/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    padding-bottom: 1rem;
+    width: 280px;
+    border-radius: 12px;
+    background-color:  hsl(216, 50%, 16%);
+    box-shadow: 0px 5px 15px 17px rgba(0,0,0,0.16);
+}
+
+/* CARD IMAGE*/
+
+.image {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+img.nft {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* CARD IMAGE HOVER */
+
+.image-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0;
+    background-color: hsla(178, 100%, 50%, 0.5);
+}
+
+.image-hover img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-hover:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+/* CARD CONTENT */  
+
+h2 {
+    margin-top: 17px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+h2:hover {
+    color:  hsl(178, 100%, 50%);
+}
+
+p.description {
+    margin-bottom: 0px;
+    line-height: 25px;
+}
+
+div.data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+div.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+div.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+h4.price {
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .1px;
+    color: hsl(178, 100%, 50%);
+}
+
+p.price img {
+    padding-right: 6px;
+}
+
+p.time {
+    margin-bottom:18px;
+    font-weight: 400;
+}
+
+p.time img {
+    padding-right: 6px;
+}
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    height: 0.5px;
+    border: 0;
+    background-color: hsl(215, 32%, 27%);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom:0px;
+    gap: 16px
+}
+
+.footer img {
+    margin-top: 4px;
+    width: 31px;
+    height: auto;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50px;
+}
+
+.footer p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.footer span {
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+}
+
+.footer span:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+/* RESPONSIVE DESKTOP */
+
+@media only screen and (min-width: 1440px) {
+    body {
+        font-size: 18px;
+    }
+    .card {
+        width: 300px;
+        box-shadow: 0px 40px 60px 15px rgba(0,0,0,0.42);
+    }
+    .image {
+        margin-bottom: 5px;
+    }
+    h2{
+        margin-top:18px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    p.description {
+        margin-bottom: 25px;
+    }
+    hr{
+        margin-top: 25px;
+    }
+    h4.price{
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+    }
+    p.time {
+        margin: 0;
+        font-size: 16px;
+        letter-spacing: 0.2px;
+    }
+    .footer {
+        margin-bottom: 6px;
+    }
+    .footer p {
+        font-size: 16px;
+        letter-spacing: 0.2px;
+    }
+    .image-hover {
+        height: 300px;
+    }
+}
