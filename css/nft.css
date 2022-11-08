@@ -139,7 +139,7 @@ p.time img {
 hr {
     margin-top: 0px;
     margin-bottom: 5px;
-    height: 1px;
+    height: 2px;
     border: 0;
     background-color: hsl(215, 32%, 27%);
 }
