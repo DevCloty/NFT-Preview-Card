@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://github.com/DevCloty/NFT-Preview-Card)
 - [Live Site URL](https://devcloty.github.io/NFT-Preview-Card/nft.html)
 
 ## My process
