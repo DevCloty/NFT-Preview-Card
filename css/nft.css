@@ -139,9 +139,9 @@ p.time img {
 hr {
     margin-top: 0px;
     margin-bottom: 5px;
-    height: 2px;
-    border: 0;
-    background-color: hsl(215, 32%, 27%);
+    height: 1px;
+    background-color: hsla(215, 52%, 70%, 0.459);
+    border-color: hsla(215, 32%, 27%, 0.568);
 }
 
 .footer {
